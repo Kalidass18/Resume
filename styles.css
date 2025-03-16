@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: linear-gradient(45deg, #1a1a1a, #2d3436);
+    color: white;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #00b4db, #0083b0);
+    padding: 0 2rem;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.2);
+    height: 60px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    padding: 15px 0;
+}
+
+nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    padding: 15px 0;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+.about-button, .back-button {
+    background: #00b4db;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin: 1rem 0;
+}
+
+.back-button {
+    background: #2d3436;
+    margin-top: 1rem;
+}
+
+.about-button:hover, .back-button:hover {
+    transform: translateY(-2px);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    padding: 4rem 0;
+    margin: 2rem 0;
+    background: linear-gradient(135deg, #00b4db30, #0083b030);
+    border-radius: 15px;
+}
+
+.profile-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    margin-left: 2rem;
+    border: 3px solid #00b4db;
+    box-shadow: 0 0 25px rgba(0,180,219,0.5);
+}
+
+.header-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #00b4db;
+}
+
+.title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.about-me {
+    background: linear-gradient(45deg, #2d343650, #43434350);
+    padding: 1.5rem;
+    border-radius: 10px;
+    max-width: 600px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.skill-card {
+    background: linear-gradient(45deg, #2d3436, #434343);
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.project-card {
+    background: linear-gradient(45deg, #2d3436, #434343);
+    padding: 1.5rem;
+    border-radius: 15px;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.tech-stack {
+    color: #000000;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+.project-links a {
+    color: #000000;
+    text-decoration: none;
+    margin-right: 1rem;
+    transition: color 0.3s;
+}
+
+.project-links a:hover {
+    color: #ffd700;
+}
+
+#contact {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #00b4db;
+    border-radius: 5px;
+    color: white;
+}
+
+button {
+    background: #00b4db;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 1rem;
+}
+
+button:hover {
+    background: #0083b0;
+}
+
+.social-links {
+    margin-top: 2rem;
+}
+
+.social-links a {
+    color: #00b4db;
+    margin: 0 1rem;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #ffd700;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .profile-img {
+        margin-left: 0;
+        width: 200px;
+        height: 200px;
+    }
+    
+    nav ul {
+        justify-content: center;
+        padding-right: 0;
+    }
+}

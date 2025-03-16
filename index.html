@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">Portfolio</div>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <header id="about">
+            <img src="images/kali.jpg" alt="Kalidass" class="profile-img">
+            <div class="header-content">
+                <h1>Kalidass</h1>
+                <p class="title">Java & Spring Boot Developer</p>
+                <button id="aboutBtn" class="about-button">Show About Me </button>
+                <div class="about-me" id="aboutSection" style="display: none;">
+                    <p>Full-stack developer specializing in Java and Spring Boot backend systems...</p>
+                    <button id="backBtn" class="back-button">Back</button>
+                </div>
+            </div>
+        </header>
+
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fab fa-java fa-3x"></i>
+                    <h3>Java</h3>
+                    <!--<p>Collections | Multithreading | OOPs</p>-->
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-leaf fa-3x"></i>
+                    <h3>Spring Boot</h3>
+                   <!-- <p>REST APIs | Microservices | Security</p>-->
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-database fa-3x"></i>
+                    <h3>SQL</h3>
+                    <!--<p>MySQL | PostgreSQL | Hibernate</p>-->
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-react fa-3x"></i>
+                    <h3>React JS</h3>
+                    <!--<p>Hooks | Redux | Context API</p>-->
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-html5 fa-3x"></i>
+                    <h3>Web Technologies</h3>
+                    <!--<p>HTML5 | CSS | JavaScript</p>-->
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>E-Commerce Platform</h3>
+                    <p>Full-stack e-commerce application with user authentication and product management</p>
+                    <p class="tech-stack">Java | Spring Boot | React | MySQL</p>
+                    <div class="project-links">
+                        <a href="#"><i class="fab fa-github"></i> Code</a>
+                        <a href="#"><i class="fas fa-external-link-alt"></i> Demo</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Ticket Booking System</h3>
+                    <p>Console-based ticket booking system implementing core Java concepts</p>
+                    <p class="tech-stack">Java | OOPs | File Handling</p>
+                    <div class="project-links">
+                        <a href="#"><i class="fab fa-github"></i> Code</a>
+                        <a href="#"><i class="fas fa-external-link-alt"></i> Demo</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Portfolio Website</h3>
+                    <p>Responsive portfolio website showcasing skills and projects</p>
+                    <p class="tech-stack">HTML | CSS | JavaScript</p>
+                    <div class="project-links">
+                        <a href="#"><i class="fab fa-github"></i> Code</a>
+                        <a href="#"><i class="fas fa-external-link-alt"></i> Live</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea rows="5" placeholder="Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <div class="social-links">
+                <a href="https://github.com/kalidass18"><i class="fab fa-github"></i></a>
+                <a href="www.linkedin.com/in/kalidass-s-bb919426a"><i class="fab fa-linkedin"></i></a>
+                <a href="https://mail.google.com/mail/u/0/#inbox"><i class="fas fa-envelope"></i></a>
+            </div>
+        </section>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
